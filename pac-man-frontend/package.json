@@ -1,0 +1,28 @@
+{
+  "name": "gameapi-frontend",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "repository": "https://github.com/RiceGradOOCourse/gameapi-team_r",
+  "author": "Yunan Zhou <rylanzhou@outlook.com>",
+  "license": "ISC",
+  "scripts": {
+    "start": "webpack serve --config webpack.config.js",
+    "build": "webpack --config webpack.config.js && rm -rf ../pac-man-backend/src/main/resources/public/* && cp -R build/* ../pac-man-backend/src/main/resources/public",
+    "deploy": "cd ../pac-man-backend && mvn heroku:deploy"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.4",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.4.4",
+    "webpack": "^5.64.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  },
+  "dependencies": {
+    "qs": "^6.10.1"
+  }
+}

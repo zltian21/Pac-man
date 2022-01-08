@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rylan Zhou" />
+    <title>Game Final - team Rice</title>
+  <script defer src="bundle.8d214f7748b40f1e91c9.js"></script><link href="styles.8d214f7748b40f1e91c9.css" rel="stylesheet"></head>
+  <body>
+    <div class="window">
+      <div class="header">
+        <div class="apple-ops">
+          <span style="background-color: rgb(237, 105, 94)"></span>
+          <span style="background-color: rgb(245, 190, 70)"></span>
+          <span style="background-color: rgb(98, 196, 84)"></span>
+        </div>
+        Pac-Man by team Rice
+      </div>
+
+      <div class="container">
+        <canvas id="canvas" width="1008" height="528"></canvas>
+
+        <div class="mask">
+          <h1>PAC-MAN</h1>
+          <h3>BY TEAM-RICE</h3>
+          <button id="start-btn">START GAME</button>
+          <button id="settings-btn">SETTINGS</button>
+
+          <div class="settings-panel hidden">
+            <div id="position">CUSTOM POSITION</div>
+            <br /><br />
+            <div id="lives">
+              LIVES
+              <div>
+                <span id="minus">−</span> <span class="value">3</span> <span id="plus">+</span>
+              </div>
+            </div>
+            <div id="speed">
+              SPEED
+              <div>
+                <span name="slow">SLOW</span>
+                <span name="med">MED</span>
+                <span name="fast">FAST</span>
+              </div>
+            </div>
+            <div style="text-align: center">
+              <button id="confirm">CONFIRM</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="info hidden">
+          <div class="lives"></div>
+          <div class="level">LV: <span>01</span></div>
+          <div class="score">Score: <span>00000</span></div>
+          <div class="dots">Dots: <span>000</span></div>
+          <div class="fruits">
+            <img
+              src="https://res.cloudinary.com/rylanzhou/image/upload/v1637006888/COMP%20504/cherry_irhhhz.png"
+              alt="cherry"
+              name="cherry"
+              width="30"
+              height="30"
+            />
+            <img
+              src="https://res.cloudinary.com/rylanzhou/image/upload/v1637006888/COMP%20504/orange_y7ehso.png"
+              alt="orange"
+              name="orange"
+              width="30"
+              height="30"
+            />
+            <img
+              src="https://res.cloudinary.com/rylanzhou/image/upload/v1637006888/COMP%20504/banana_ksnsbc.png"
+              alt="banana"
+              name="banana"
+              width="30"
+              height="30"
+            />
+            <img
+              src="https://res.cloudinary.com/rylanzhou/image/upload/v1637006888/COMP%20504/apple_hr27jm.png"
+              alt="apple"
+              name="apple"
+              width="30"
+              height="30"
+            />
+            <img
+              src="https://res.cloudinary.com/rylanzhou/image/upload/v1637006888/COMP%20504/avocado_latpoc.png"
+              alt="avocado"
+              name="avocado"
+              width="30"
+              height="30"
+            />
+          </div>
+        </div>
+
+        <div class="footer hidden">
+          <button id="pause">▶ / ❚ ❚</button>
+          <button id="back-btn">BACK TO MENU</button>
+        </div>
+
+        <div class="game-over">GAME OVER</div>
+        <div class="all-collected">ALL FRUITS COLLETED!</div>
+      </div>
+    </div>
+  </body>
+</html>
