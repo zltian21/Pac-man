@@ -10,6 +10,9 @@ Developer: **Letian Zhang**
 
 Developer: **Yunan Zhou**
 
+### Link
+Please visit https://pacman-final-team-rice.herokuapp.com/ to view our projects.  
+
 ### Run JUnit Test  
 If you need to run the JUnit Test do the following:  
 1. find the [map.txt] file in the project folder. (peer to [pac-man-backend] and [pac-man-frontend])  
